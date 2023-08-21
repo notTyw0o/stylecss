@@ -1,0 +1,334 @@
+
+
+body {
+    background-color: #111111;
+    margin: 0; 
+}
+
+.navigation-bar {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: #111111;
+    padding-bottom: 10px;
+    height: 90px;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu > ul {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.main-menu-container {
+    display: flex;
+    margin-left: 20px;
+}
+
+.main-menu > a {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    color: white;    
+}
+
+.svg-menu {
+    padding-right: 5px;
+}
+
+#play {
+    margin-top: 2px;
+}
+
+#categories {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+#premium {
+    margin-top: 5px;
+}
+
+.login-menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.login-menu > div > a {
+    color: white;
+}
+
+.search, .notification, .login-button {
+    margin-right: 20px;
+}
+
+.login-button {
+    margin-bottom: 5px;
+}
+
+.login-button > a > button {
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: #ef4444;
+}
+
+#responsive-menu {
+    display: none;
+}
+
+@media screen and (max-width : 755px) and (min-width: 0px){
+
+    #main-menu-container, #login-menu {
+        display: none;
+    }
+
+    #responsive-menu {
+        display: inline;
+    }
+}
+
+.hidden-bar > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.welcome-container {
+    margin-top: 80px;
+    background-color: azure;
+    padding-bottom: 0px;
+}
+
+.card-text-text {
+    color: white;
+    transition: 0.3s;
+}
+
+.card-text-text:hover {
+    color: orange;
+}
+
+.card-hover-overlay {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card-hover-overlay:hover {
+    opacity: 1;
+}
+
+.footer {
+    background-color: #2d2d2d;
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    border-top: 2px solid white;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-logo {
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-logo > a > svg {
+    color: white;
+    margin-bottom: 3px;
+
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    position: relative;
+    top: 20px;
+    background-color: #111111;
+    color: white;
+    
+}
+
+/* CATEOGIES */
+
+.category-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+    
+    
+}
+
+.category-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 2px solid white;
+    
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.form-select {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.pageValue {
+    width: 100px;
+}
+
+.button-cat > button {
+    height: 100%;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ef4444;
+}
+
+
+
+
+.anime-image {
+    width: 250px;
+    height: 350px;
+}
+
+
+.cat-overlay {
+    cursor: pointer;
+    opacity: 0;
+}
+
+.cat-overlay:hover {
+    opacity: 1;
+}
+
+.anime-list-none {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#anime-info-text > p {
+    margin: 0;
+    color: white;
+}
+
+.rc-text > p {
+    margin: 0;
+}
+
+#style-3::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+#info-anime-image {
+    height: 500px;
+}
+
+@media screen and (max-width : 1199px) and (min-width: 990px){
+    #info-anime-image {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width : 755px) and (min-width: 0px){
+    #recent-releases-right {
+        display: none;
+    }
+
+    #info-anime-image-class {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.prev-next-text {
+    color: #ffc107;
+}
+
+.prev-next-text:hover {
+    color: white;
+}
+
+#frame {
+    display:block;
+    width:100%;
+    height: 500px;
+    overflow: hidden;
+ }
